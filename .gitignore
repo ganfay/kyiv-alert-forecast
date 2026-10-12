@@ -1,0 +1,33 @@
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE & Editor artifacts
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Large datasets & scratch research files
+data/raw/
+data_research/
+*.tmp
+.tmp_*
+
+# Trained model weights (regenerated via python src/train_and_evaluate.py)
+reports/models/*.joblib
+*.joblib

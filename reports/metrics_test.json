@@ -1,0 +1,127 @@
+{
+  "overall": {
+    "Climatology": {
+      "brier_score": 0.4792,
+      "brier_skill_score": 0.0,
+      "roc_auc": 0.4828,
+      "pr_auc": 0.5949,
+      "log_loss": 1.3658,
+      "n_samples": 672,
+      "positive_rate": 0.6116
+    },
+    "Persistence": {
+      "brier_score": 0.2339,
+      "brier_skill_score": 0.5119,
+      "roc_auc": 0.7859,
+      "pr_auc": 0.8337,
+      "log_loss": 0.7707,
+      "n_samples": 672,
+      "positive_rate": 0.6116
+    },
+    "LogisticRegression": {
+      "brier_score": 0.19142,
+      "brier_skill_score": 0.6005,
+      "roc_auc": 0.8446,
+      "pr_auc": 0.9168,
+      "log_loss": 0.5626,
+      "n_samples": 672,
+      "positive_rate": 0.6116
+    },
+    "LightGBM": {
+      "brier_score": 0.15689,
+      "brier_skill_score": 0.6726,
+      "roc_auc": 0.8388,
+      "pr_auc": 0.9143,
+      "log_loss": 0.448,
+      "n_samples": 672,
+      "positive_rate": 0.6116
+    }
+  },
+  "new_alert_onset": {
+    "Climatology": {
+      "brier_score": 0.32099,
+      "brier_skill_score": 0.0,
+      "roc_auc": 0.4801,
+      "pr_auc": 0.388,
+      "log_loss": 0.9443,
+      "n_samples": 437,
+      "positive_rate": 0.4027
+    },
+    "Persistence": {
+      "brier_score": 0.35968,
+      "brier_skill_score": -0.1205,
+      "roc_auc": 0.5,
+      "pr_auc": 0.4027,
+      "log_loss": 1.1851,
+      "n_samples": 437,
+      "positive_rate": 0.4027
+    },
+    "LogisticRegression": {
+      "brier_score": 0.29435,
+      "brier_skill_score": 0.083,
+      "roc_auc": 0.6372,
+      "pr_auc": 0.5392,
+      "log_loss": 0.8651,
+      "n_samples": 437,
+      "positive_rate": 0.4027
+    },
+    "LightGBM": {
+      "brier_score": 0.24126,
+      "brier_skill_score": 0.2484,
+      "roc_auc": 0.6237,
+      "pr_auc": 0.5092,
+      "log_loss": 0.6889,
+      "n_samples": 437,
+      "positive_rate": 0.4027
+    }
+  },
+  "alert_continuation": {
+    "Climatology": {
+      "brier_score": 0.77339,
+      "brier_skill_score": 0.0,
+      "roc_auc": "N/A",
+      "pr_auc": "N/A",
+      "log_loss": 2.1498,
+      "n_samples": 235,
+      "positive_rate": 1.0
+    },
+    "Persistence": {
+      "brier_score": 0.0,
+      "brier_skill_score": 1.0,
+      "roc_auc": "N/A",
+      "pr_auc": "N/A",
+      "log_loss": 0.0,
+      "n_samples": 235,
+      "positive_rate": 1.0
+    },
+    "LogisticRegression": {
+      "brier_score": 0.0,
+      "brier_skill_score": 1.0,
+      "roc_auc": "N/A",
+      "pr_auc": "N/A",
+      "log_loss": 0.0002,
+      "n_samples": 235,
+      "positive_rate": 1.0
+    },
+    "LightGBM": {
+      "brier_score": 0.0,
+      "brier_skill_score": 1.0,
+      "roc_auc": "N/A",
+      "pr_auc": "N/A",
+      "log_loss": 0.0001,
+      "n_samples": 235,
+      "positive_rate": 1.0
+    }
+  },
+  "tuning": {
+    "best_params": {
+      "n_estimators": 200,
+      "learning_rate": 0.03,
+      "num_leaves": 31,
+      "max_depth": 6,
+      "min_child_samples": 100
+    },
+    "val_brier_raw": 0.14982837217857875,
+    "val_brier_calibrated": 0.1251203049005721
+  }
+}
